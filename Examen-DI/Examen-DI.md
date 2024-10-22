@@ -3,26 +3,30 @@
   <img src="logoEusko.png" alt="alt text" style="width: 48%;">
 </div>
 
-# Prueba 1 - Desarrollo de interfaces
+# Examen DI - Eval 1 - 24/10/2024
 
-- [Prueba 1 - Desarrollo de interfaces](#prueba-1---desarrollo-de-interfaces)
-      - [Embestida](#embestida)
-      - [Estructura del proyecto](#estructura-del-proyecto)
-  - [Configura y comparte](#configura-y-comparte)
-    - [Evaluación](#evaluación)
-  - [Sustentar el trabajo](#sustentar-el-trabajo)
-    - [Evaluación](#evaluación-1)
-  - [La furia de la embestida](#la-furia-de-la-embestida)
-    - [Evaluación](#evaluación-2)
+- [Descripción del examen](#descripción-del-examen)
+  - [Embestida](#embestida)
+  - [Estructura del proyecto](#estructura-del-proyecto)
+- [Ejercicios](#ejercicios)
+    - [Configura y comparte](#configura-y-comparte)
+        - [Evaluación](#evaluación)
+    - [Sustentar el trabajo](#sustentar-el-trabajo)
+        - [Evaluación](#evaluación-1)
+    - [La furia de la embestida](#la-furia-de-la-embestida)
+        - [Evaluación](#evaluación-2)
 
+# Descripción del examen
 
-:grey_exclamation: El objetivo de esta prueba es evaluar la habilidad en el desarrollo de interfaces para Android, concetamente, usando kotlin y la librería de jetpack Compose. 
+:grey_exclamation: El objetivo de esta prueba es evaluar la habilidad en el desarrollo de interfaces para Android, concetamente, usando kotlin y la librería de jetpack Compose.
 
 Los contenidos de este examen incluyen:
 - Desarrollo de vistas en jetpack compose
-- Uso de intents 
+- Uso de intents
 - Navegación entre componentes
 
+
+---
 #### Embestida
 
 El proyecto de esta prueba se llama **estampida** es un juego de preguntas. Está compuesto por dos vistas: **el menú principal** y la vista de **juego**.
@@ -36,19 +40,29 @@ El juego es sencillo, las preguntas surjen infinitamente y el juador va ganando 
   <img src="estampida.png" alt="alt text" style="width: 67%;">
 </div>
 
+
+---
+
 #### Estructura del proyecto
 
 <div style="display: flex; justify-content: left;">
-  <img src="image-5.png" alt="alt text" style="width: 15%; height: 15%">
+  <img src="image-5.png" alt="alt text" style="width: 25%; height: 25%">
 </div>
+
+---
 
 - `MainActivity.kt`: Fichero principal de la Activity. No deberías hacer cambios aquí.
 - `HomeScreen.kt` : Vista del menu.
 - `AppNavigation.kt` : Fichero con un composable para la navegación.
 - `GameViewModel.kt`: View Model del juego. Aquí se gestionan los cambios del modelo del juego.
-- `GameScreen.kt`: Vista del juego. 
+- `GameScreen.kt`: Vista del juego.
 - `SoundController.kt`: Incluye funcionas para reproducir sonidos. No deberías hacer cambios aquí.
 - `Splash.kt` : Incluye funciones para gestionar la animación de entrada. No deberías hacer cambios aquí.
+
+
+---
+
+# Ejercicios
 
 ### Configura y comparte
 
@@ -65,12 +79,13 @@ El equipo de marketing ha pensado que nos ayudaría a expandirnos crear un punto
 3. El botón de desplegar es funcional
 4. Se ha usado el tipo de letra `youblockheadopen.ttf`
 5. El botón de plegar es funcional
-6. Se ha agregado el boton no funcional de configuración. 
-6. Se ha agregado el boton de compartir. 
+6. Se ha agregado el boton no funcional de configuración.
+6. Se ha agregado el boton de compartir.
 7. Compartir redirigirá a `https://elearning5.hezkuntza.net/`
 8. Se ha utilizado `tablero_octogonal.webp` como imagen de los botones.
 
 
+---
 
 ###  Sustentar el trabajo
 
@@ -88,7 +103,7 @@ Aquí tienes el diseño de la página a crear y el del punto de menú.
 #### Evaluación
 
 1. Se ha creado un nuevo fichero de kotlin para la vista.
-2. Se ha añadido un nuevo punto de menú a la vista 
+2. Se ha añadido un nuevo punto de menú a la vista
 3. El punto de menu respeta el diseño.
 4. El punto de menu es funcional y dirige a la vista.
 5. El punto de menu usa el logo `logo.webp`.
@@ -97,8 +112,10 @@ Aquí tienes el diseño de la página a crear y el del punto de menú.
 8. El punto de menú usa el botón `boton.webp`.
 9. La vista de elementos se hace con LazyColum y con identificador.
 
+---
+
 ### La furia de la embestida
-Inicialmente, el desarrollador de la empresa pensó en un usar un contador de racha que se pusiera a 0 al fallar una pregunta. Más tarde, la idea de transformar el contador de rachas en uno de furia le pareció más atractiva... pero no ha cambiado el nombre de la variable en el código, que sigue llamandose racha. Ahora, queremos tener ambos contadores! 
+Inicialmente, el desarrollador de la empresa pensó en un usar un contador de racha que se pusiera a 0 al fallar una pregunta. Más tarde, la idea de transformar el contador de rachas en uno de furia le pareció más atractiva... pero no ha cambiado el nombre de la variable en el código, que sigue llamandose racha. Ahora, queremos tener ambos contadores!
 
 **Tu tarea es arreglar ese fallo y añadir el nuevo y deseado contador.**
 
@@ -110,5 +127,5 @@ Aquí tienes el diseño del contador:
 1. Se ha cambiado el nombre de la variables que guardan la racha por furia en el `GameViewModel` y el `GameScreen` para que represente el estado real.
 2. Se ha creado una nueva variable racha en el view vodel.
 3. Se ha implementado correctamente la lógica necesaria para represente la racha de preguntas acertadas seguidas.
-4. Se ha añadido la racha a la vista de juego, en la función `ProgressArea` en el `Thumb` del slider. 
+4. Se ha añadido la racha a la vista de juego, en la función `ProgressArea` en el `Thumb` del slider.
 5. El contador de racha respeta el diseño.
