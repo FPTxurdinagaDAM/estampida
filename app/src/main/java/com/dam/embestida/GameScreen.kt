@@ -77,21 +77,27 @@ fun GameScreen(navController: NavHostController) {
     Box(
         modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.TopCenter
     ) {
+        // Background image
         Image(
             painter = painterResource(id = R.drawable.game_bg),
             contentDescription = "Splash Screen",
             contentScale = ContentScale.Crop,
             modifier = Modifier.fillMaxSize()
         )
+
+        // Columna principal
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Top,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            // Botón de salir
             TopBarArea(onClick = {
                 viewModel.abandonarJuego()
                 navController.popBackStack()
             })
+
+            // Área de la pregunta
             QuestionArea(viewModel)
         }
     }
@@ -215,16 +221,15 @@ fun ProgressArea(racha: Int) {
     ) {
 
 
-        // Slider sin colores para que la pista personalizada sea visible
+        // Slider de fondo, sin "thumb" y con un degradado
         Slider(
             value = progress,
             onValueChange = {},
             valueRange = 0f..10f,
             steps = 11,
             colors = SliderDefaults.colors(
-                thumbColor = Color.Transparent, // Color del "thumb" del slider
-                activeTrackColor = Color.Transparent, // Hacer transparente el track activo
-                inactiveTrackColor = Color.Transparent, // Hacer transparente el track inactivo
+                activeTrackColor = Color.Transparent,
+                inactiveTrackColor = Color.Transparent,
             ),
             track = { DrawTrack(purpleRedGradient()) }, // Personalizar el "thumb" del slider
             thumb = {}, // No mostrar el "thumb" por completo
@@ -232,28 +237,29 @@ fun ProgressArea(racha: Int) {
                 .fillMaxWidth(0.85f)
         )
 
+        // Imagen sobre el slider actúa como barra de progreso ver R.drawable.barra_progreso
         Image(
-            painter = painterResource(id = R.drawable.barra_progreso), // Reemplaza con tu recurso de imagen
-            contentDescription = "Timón de madera",
+            painter = painterResource(id = R.drawable.barra_progreso),
+            contentDescription = "Base de madre la barra de progreso",
             contentScale = ContentScale.FillWidth,
             modifier = Modifier
                 .fillMaxWidth(0.85f)
-            // Tamaño del timón
         )
 
+        // Slider con "thumb" personalizado, sin track, se muestra sobre la barra de progreso
         Slider(
             value = progress,
             onValueChange = {},
             valueRange = 0f..10f,
-            steps = 11, // Para representar correctamente los 360 tonos
+            steps = 11, // Pasos del slider (de 0 a 10)
             colors = SliderDefaults.colors(
-                thumbColor = Color.Transparent, // Color del "thumb" del slider
                 activeTrackColor = Color.Transparent, // Hacer transparente el track activo
                 inactiveTrackColor = Color.Transparent, // Hacer transparente el track inactivo
             ),
             thumb = {
+                // Dibujar el "thumb" personalizado
                 DrawThumb(idCara = cara)
-            }, // Personalizar el "thumb" del slider
+            },
             modifier = Modifier
                 .fillMaxWidth(0.85f)
         )
@@ -265,17 +271,15 @@ fun DrawThumb(idCara : Int) {
     Box(
         contentAlignment = Alignment.Center,
     ) {
-        // Imagen que actúa como botón
         Image(
-            painter = painterResource(id = R.drawable.escudo), // Reemplaza con tu recurso de imagen
-            contentDescription = "Timón de madera",
-            modifier = Modifier.size(80.dp) // Tamaño del botón
-        )
-
-        Image(
-            painter = painterResource(id = idCara), // Reemplaza con tu recurso de imagen
+            painter = painterResource(id = R.drawable.escudo),
             contentDescription = "Escudo de madera",
-            modifier = Modifier.size(45.dp) // Tamaño del botón
+            modifier = Modifier.size(80.dp)
+        )
+        Image(
+            painter = painterResource(id = idCara),
+            contentDescription = "Cara del personaje",
+            modifier = Modifier.size(45.dp)
         )
     }
 }

@@ -40,10 +40,10 @@ fun HomeScreen(navController: NavHostController) {
     val context = LocalContext.current // Necesario para reproducir la música
     var hideSplash by remember { mutableStateOf(false) } // Controla cuándo mostrar el menú principal
     var showMenu by remember { mutableStateOf(false) } // Controla cuándo mostrar el menú principal
-
-    val splashEnabled by remember { mutableStateOf(false) } // Controla cuándo mostrar el splash (En desarrollo puede hacer perder unos segundos cada ejecución)
-    if (!splashEnabled)
+    val splashEnabled by remember { mutableStateOf(true) } // Controla cuándo mostrar el splash (En desarrollo puede hacer perder unos segundos cada ejecución)
+    if (!splashEnabled){
         showMenu = true // Ocultar el menú principal si se muestra la splash
+    }
 
 
     Box(
@@ -103,7 +103,7 @@ fun MainMenu(navController: NavHostController) {
                     1f
                 ) // Origen de rotación en el centro y abajo (parte inferior)
             ), // Aparece rotando desde la parte inferior
-        contentAlignment = Alignment.Center // El eje de la rotación es la parte baja
+        contentAlignment = Alignment.Center // Centrar el contenido
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -119,6 +119,7 @@ fun MainMenu(navController: NavHostController) {
                 modifier = Modifier.scale(0.8f)
             )
 
+            // Botón para iniciar el juego
             PlayMenuButton(onClick = {
                 navController.navigate(AppScreen.GameScreen.route)
             })
@@ -129,12 +130,6 @@ fun MainMenu(navController: NavHostController) {
     LaunchedEffect(Unit) {
         startMenuAnimation = true
     }
-}
-
-@Composable
-@Preview
-fun MenuButtonPreview() {
-    PlayMenuButton()
 }
 
 @Composable
@@ -150,7 +145,6 @@ fun PlayMenuButton(onClick: () -> Unit = {}) {
             alignment = Alignment.Center,
             modifier = Modifier.offset(x = (5).dp)
         )
-        // Aquí puedes agregar más elementos del menú
         Button(
             onClick = onClick,
             modifier = Modifier.align(Alignment.Center),

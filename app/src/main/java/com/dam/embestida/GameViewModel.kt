@@ -114,7 +114,7 @@ class GameViewModel : ViewModel(), CoroutineScope {
             _racha.value = _racha.value?.plus(-1) // Reinicia la racha
         }
 
-        if(_racha.value!! < 20){
+        if(_racha.value!! < 5){
             _musica.value = R.raw.awesomeness
         } else {
             _musica.value = R.raw.heroic_demise

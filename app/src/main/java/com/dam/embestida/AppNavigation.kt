@@ -23,7 +23,7 @@ fun AppNavigation() {
     val navController = rememberNavController()
     Log.d(
         "AppNavigation",
-        "Current route: ${navController.currentBackStackEntryAsState().value?.destination?.route}"
+        "route: ${navController.currentBackStackEntryAsState().value?.destination?.route}"
     )
 
     NavHost(navController = navController,
