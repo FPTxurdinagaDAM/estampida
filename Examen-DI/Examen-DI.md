@@ -5,16 +5,17 @@
 
 # Examen DI - Eval 1 - 24/10/2024
 
+- [Examen DI - Eval 1 - 24/10/2024](#examen-di---eval-1---24102024)
 - [Descripción del examen](#descripción-del-examen)
-  - [Embestida](#embestida)
-  - [Estructura del proyecto](#estructura-del-proyecto)
+      - [Embestida](#embestida)
+      - [Estructura del proyecto](#estructura-del-proyecto)
 - [Ejercicios](#ejercicios)
     - [Configura y comparte](#configura-y-comparte)
-        - [Evaluación](#evaluación)
+      - [Evaluación](#evaluación)
     - [Sustentar el trabajo](#sustentar-el-trabajo)
-        - [Evaluación](#evaluación-1)
-    - [La furia de la embestida](#la-furia-de-la-embestida)
-        - [Evaluación](#evaluación-2)
+      - [Evaluación](#evaluación-1)
+    - [La racha de la embestida](#la-racha-de-la-embestida)
+      - [Evaluación](#evaluación-2)
 
 # Descripción del examen
 
@@ -29,11 +30,11 @@ Los contenidos de este examen incluyen:
 ---
 #### Embestida
 
-El proyecto de esta prueba se llama **estampida** es un juego de preguntas. Está compuesto por dos vistas: **el menú principal** y la vista de **juego**.
-- Menu principal: Incluye un botón central que lleva al juego.
-- Juego: El juego incluye más elementos que la vista principal, la sección de pregunta y respuestas, un termporizador de pregunta, un contador de racha y un botón de salir.
+Este proyecto se llama **Embestida** y es un juego de preguntas. Está compuesto por dos vistas: la **vista de home** y la **vista de juego**.
+- **Vista de home**: Incluye un botón central que lleva al juego.
+- **Vista de Juego**: Incluye la sección de preguntas y respuestas, un termporizador de respuesta, un slider de furia y un botón de salir.
 
-El juego es sencillo, las preguntas surjen infinitamente y el juador va ganando puntos si acierta y perdiendolos si falla.
+El juego es sencillo, las preguntas surjen infinitamente y el jugador va ganando furia si acierta y perdiendola si falla.
 
 
 <div style="display: flex; justify-content: space-between;">
@@ -66,7 +67,7 @@ El juego es sencillo, las preguntas surjen infinitamente y el juador va ganando 
 
 ### Configura y comparte
 
-El equipo de marketing ha pensado que nos ayudaría a expandirnos crear un punto de menu que permita compartir el enlace de la aplicación a los usuarios y así aumentar nuestro alcance. Para ello se ha pensado crear un pequño menu desplegable que incluya tambien una entrada para configuración.
+El equipo de marketing ha pensado que ayudaría a expandirnos, crear un punto de menu que permita compartir el enlace de la aplicación a los usuarios y así aumentar nuestro alcance. Para ello se ha pensado crear un pequño menu desplegable que incluya tambien una entrada para configuración.
 
 **Tu tarea es implementar el menu y el intent de compartir.**
 
@@ -113,21 +114,21 @@ Aquí tienes el diseño de la página a crear y el del punto de menú.
 7. Se ha incluido un botón de volver atrás.
 8. El punto de menú usa el botón `boton.webp`.
 9. La vista de elementos se hace con LazyColum y con identificador.
+10. Se ha usado el tipo de letra `youblockheadopen.ttf`
 
 ---
 
-### La furia de la embestida
-Inicialmente, el desarrollador de la empresa pensó en un usar un contador de racha que se pusiera a 0 al fallar una pregunta. Más tarde, la idea de transformar el contador de rachas en uno de furia le pareció más atractiva... pero no ha cambiado el nombre de la variable en el código, que sigue llamandose racha. Ahora, queremos tener ambos contadores!
+### La racha de la embestida
+En el juego hay una slider con un escudo que va subiendo segun se aciertan preguntas. Adhora, además, queremos implementar una contador que indica la racha de preguntas acertadas seguidas.
 
-**Tu tarea es arreglar ese fallo y añadir el nuevo y deseado contador.**
+**Tu tarea es agregar el contador de racha.**
 
 Aquí tienes el diseño del contador:
 
 ![alt text](image-4.png)
 
 #### Evaluación
-1. Se ha cambiado el nombre de la variables que guardan la racha por furia en el `GameViewModel` y el `GameScreen` para que represente el estado real.
-2. Se ha creado una nueva variable racha en el view vodel.
-3. Se ha implementado correctamente la lógica necesaria para represente la racha de preguntas acertadas seguidas.
-4. Se ha añadido la racha a la vista de juego, en la función `ProgressArea` en el `Thumb` del slider.
-5. El contador de racha respeta el diseño.
+1. Se ha creado una nueva variable racha en el view vodel.
+2. Se ha implementado correctamente la lógica necesaria para represente la racha de preguntas acertadas seguidas.
+3. Se ha añadido la racha a la vista de juego, en la función `ProgressArea` en el `Thumb` del slider.
+4. El contador de racha respeta el diseño.

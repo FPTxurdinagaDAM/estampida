@@ -23,8 +23,8 @@ class GameViewModel : ViewModel(), CoroutineScope {
         get() = Dispatchers.Main + job
 
     // Datos del juego
-    private val _racha = MutableLiveData<Int>()
-    val racha: LiveData<Int> = _racha
+    private val _furia = MutableLiveData<Int>()
+    val furia: LiveData<Int> = _furia
 
     // Lista de preguntas
     private val _preguntas = MutableLiveData<List<Pregunta>>()
@@ -66,7 +66,7 @@ class GameViewModel : ViewModel(), CoroutineScope {
         // Generamos las preguntas
         val preguntasGeneradas = generarPreguntasReales()
         _preguntas.value = preguntasGeneradas
-        _racha.value = 0
+        _furia.value = 0
         _juegoEnCurso.value = true
 
         launch {
@@ -94,6 +94,7 @@ class GameViewModel : ViewModel(), CoroutineScope {
 
         launch {
             delay(200)
+
             // Iniciamos la cuenta regresiva
             iniciarTemporizador(nuevaPregunta.tiempo)
         }
@@ -108,13 +109,15 @@ class GameViewModel : ViewModel(), CoroutineScope {
         // Cancelar temporizador si el usuario responde
         temporizadorJob?.cancel()
 
+        // Actualizar la furia según la respuesta
         if (preguntaAcertada) {
-            _racha.value = _racha.value?.plus(1) // Incrementa la racha
+            _furia.value = _furia.value?.plus(1) // Incrementa la furia
         } else {
-            _racha.value = _racha.value?.plus(-1) // Reinicia la racha
+            _furia.value = _furia.value?.plus(-1) // Decrementa la furia
         }
 
-        if(_racha.value!! < 5){
+        // Cambiamos de canción si furioso
+        if(_furia.value!! < 5){
             _musica.value = R.raw.awesomeness
         } else {
             _musica.value = R.raw.heroic_demise

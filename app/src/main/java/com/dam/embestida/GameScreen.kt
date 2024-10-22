@@ -148,7 +148,7 @@ fun TopBarArea(onClick: () -> Unit = {}) {
 fun QuestionArea(viewModel: GameViewModel) {
 
     val pregunta: Pregunta by viewModel.pregunta.observeAsState(initial = Pregunta())
-    val racha: Int by viewModel.racha.observeAsState(initial = 0)
+    val furia: Int by viewModel.furia.observeAsState(initial = 0)
     val tiempoRestante: Int by viewModel.tiempoRestante.observeAsState(initial = 0)
 
     val startedExitAnimation by viewModel.startedExitAnimation.observeAsState(initial = false)
@@ -175,7 +175,8 @@ fun QuestionArea(viewModel: GameViewModel) {
 
         ) {
 
-        ProgressArea(racha) // Contador de racha de aciertos
+        // Área de la barra de progreso
+        ProgressArea(furia)
 
         // Subsección de la pregunta
         Column(
@@ -202,11 +203,11 @@ fun QuestionArea(viewModel: GameViewModel) {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ProgressArea(racha: Int) {
+fun ProgressArea(furia: Int) {
 
-    val progress = racha.toFloat()
+    val progress = furia.toFloat()
 
-    val cara = when(racha){
+    val cara = when(furia){
             in 0..3 -> R.drawable.satisfecho
             in 3..7 -> R.drawable.enfadado
             in 7..10 -> R.drawable.muyenfadado
