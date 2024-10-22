@@ -19,7 +19,7 @@
 
 # Descripción del examen
 
-:grey_exclamation: El objetivo de esta prueba es evaluar la habilidad en el desarrollo de interfaces para Android, concetamente, usando kotlin y la librería de jetpack Compose.
+:grey_exclamation: El objetivo de esta prueba es evaluar la habilidad en el desarrollo de interfaces para Android, concretamente, usando kotlin y la librería de jetpack Compose.
 
 Los contenidos de este examen incluyen:
 - Desarrollo de vistas en jetpack compose
@@ -32,9 +32,9 @@ Los contenidos de este examen incluyen:
 
 Este proyecto se llama **Embestida** y es un juego de preguntas. Está compuesto por dos vistas: la **vista de home** y la **vista de juego**.
 - **Vista de home**: Incluye un botón central que lleva al juego.
-- **Vista de Juego**: Incluye la sección de preguntas y respuestas, un termporizador de respuesta, un slider de furia y un botón de salir.
+- **Vista de Juego**: Incluye la sección de preguntas y respuestas, un temporizador de respuesta, un slider de furia y un botón de salir.
 
-El juego es sencillo, las preguntas surjen infinitamente y el jugador va ganando furia si acierta y perdiendola si falla.
+El juego es sencillo, las preguntas surgen infinitamente y el jugador va ganando furia si acierta y perdiendola si falla.
 
 
 <div style="display: flex; justify-content: space-between;">
@@ -57,7 +57,7 @@ El juego es sencillo, las preguntas surjen infinitamente y el jugador va ganando
 - `AppNavigation.kt` : Fichero con un composable para la navegación.
 - `GameViewModel.kt`: View Model del juego. Aquí se gestionan los cambios del modelo del juego.
 - `GameScreen.kt`: Vista del juego.
-- `SoundController.kt`: Incluye funcionas para reproducir sonidos. No deberías hacer cambios aquí.
+- `SoundController.kt`: Incluye funciones para reproducir sonidos. No deberías hacer cambios aquí.
 - `Splash.kt` : Incluye funciones para gestionar la animación de entrada. No deberías hacer cambios aquí.
 
 
@@ -67,9 +67,9 @@ El juego es sencillo, las preguntas surjen infinitamente y el jugador va ganando
 
 ### Configura y comparte
 
-El equipo de marketing ha pensado que ayudaría a expandirnos, crear un punto de menu que permita compartir el enlace de la aplicación a los usuarios y así aumentar nuestro alcance. Para ello se ha pensado crear un pequño menu desplegable que incluya tambien una entrada para configuración.
+El equipo de marketing ha pensado que ayudaría a expandirnos, crear un punto de menu que permita compartir el enlace de la aplicación a los usuarios y así aumentar nuestro alcance. Para ello se ha pensado crear un pequeño menu desplegable que incluya también una entrada para configuración.
 
-**Tu tarea es implementar el menu y el intent de compartir.**
+**Tu tarea es implementar el menú y el intent de compartir.**
 
 <div style="display: flex; justify-content: left;">
   <img src="image-11.png" alt="alt text" style="width: 20%; height: 20%">
@@ -78,13 +78,13 @@ El equipo de marketing ha pensado que ayudaría a expandirnos, crear un punto de
 
 #### Evaluación
 1. Se ha implementado el botón de desplegar el menú.
-2. El boton de desplagar/plegar cambia de la letra + a la X según el estado.
-3. El botón de desplegar es funcional
-4. Se ha usado el tipo de letra `youblockheadopen.ttf`
-5. El botón de plegar es funcional
+2. El boton de desplegar/plegar cambia de la letra + a la X según el estado.
+3. El botón de desplegar es funcional.
+4. Se ha usado el tipo de letra `youblockheadopen.ttf.
+5. El botón de plegar es funcional.
 6. Se ha agregado el boton no funcional de configuración.
 6. Se ha agregado el boton de compartir.
-7. Compartir redirigirá a `https://elearning5.hezkuntza.net/`
+7. Compartir redirigirá a `https://elearning5.hezkuntza.net/`.
 8. Se ha utilizado `tablero_octogonal.webp` como imagen de los botones.
 
 
@@ -107,9 +107,9 @@ Aquí tienes el diseño de la página a crear y el del punto de menú.
 
 1. Se ha creado un nuevo fichero de kotlin para la vista.
 2. Se ha añadido un nuevo punto de menú a la vista
-3. El punto de menu respeta el diseño.
-4. El punto de menu es funcional y dirige a la vista.
-5. El punto de menu usa el logo `logo.webp`.
+3. El punto de menú respeta el diseño.
+4. El punto de menú es funcional y dirige a la vista.
+5. El punto de menú usa el logo `logo.webp`.
 6. La lista de elementos son botones no funcionales.
 7. Se ha incluido un botón de volver atrás.
 8. El punto de menú usa el botón `boton.webp`.
