@@ -68,6 +68,8 @@ El juego es sencillo, las preguntas surjen infinitamente y el juador va ganando 
 
 El equipo de marketing ha pensado que nos ayudaría a expandirnos crear un punto de menu que permita compartir el enlace de la aplicación a los usuarios y así aumentar nuestro alcance. Para ello se ha pensado crear un pequño menu desplegable que incluya tambien una entrada para configuración.
 
+**Tu tarea es implementar el menu y el intent de compartir.**
+
 <div style="display: flex; justify-content: left;">
   <img src="image-11.png" alt="alt text" style="width: 20%; height: 20%">
     <img src="image-10.png" alt="alt text"  style="width: 20%; height: 20%">
