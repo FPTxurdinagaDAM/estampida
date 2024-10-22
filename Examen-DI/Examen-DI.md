@@ -119,7 +119,7 @@ Aquí tienes el diseño de la página a crear y el del punto de menú.
 ---
 
 ### La racha de la embestida
-En el juego hay una slider con un escudo que va subiendo segun se aciertan preguntas. Adhora, además, queremos implementar una contador que indica la racha de preguntas acertadas seguidas.
+En el juego hay un slider con un escudo que va subiendo segun se aciertan preguntas. Ahora, además, queremos implementar un contador que indica la racha de preguntas acertadas seguidas.
 
 **Tu tarea es agregar el contador de racha.**
 
@@ -129,6 +129,6 @@ Aquí tienes el diseño del contador:
 
 #### Evaluación
 1. Se ha creado una nueva variable racha en el view vodel.
-2. Se ha implementado correctamente la lógica necesaria para represente la racha de preguntas acertadas seguidas.
+2. Se ha implementado correctamente la lógica necesaria para que represente la racha de preguntas acertadas seguidas.
 3. Se ha añadido la racha a la vista de juego, en la función `ProgressArea` en el `Thumb` del slider.
 4. El contador de racha respeta el diseño.
