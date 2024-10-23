@@ -65,7 +65,7 @@ El juego es sencillo, las preguntas surgen infinitamente y el jugador va ganando
 
 # Ejercicios
 
-### Configura y comparte
+### Configura y comparte (2,5p)
 
 El equipo de marketing ha pensado que ayudaría a expandirnos, crear un punto de menu que permita compartir el enlace de la aplicación a los usuarios y así aumentar nuestro alcance. Para ello se ha pensado crear un pequeño menu desplegable que incluya también una entrada para configuración.
 
@@ -77,20 +77,21 @@ El equipo de marketing ha pensado que ayudaría a expandirnos, crear un punto de
 </div>
 
 #### Evaluación
-1. Se ha implementado el botón de desplegar el menú.
-2. El boton de desplegar/plegar cambia de la letra + a la X según el estado.
-3. El botón de desplegar es funcional.
-4. Se ha usado el tipo de letra `youblockheadopen.ttf.
-5. El botón de plegar es funcional.
-6. Se ha agregado el boton no funcional de configuración.
-6. Se ha agregado el boton de compartir.
-7. Compartir redirigirá a `https://elearning5.hezkuntza.net/`.
-8. Se ha utilizado `tablero_octogonal.webp` como imagen de los botones.
+1. Se ha implementado el botón de desplegar el menú. (0.2p)
+2. El boton de desplegar/plegar cambia de la letra + a la X según el estado. (0.5p)
+3. El botón de desplegar es funcional. (0.2p)
+4. Se ha usado el tipo de letra `youblockheadopen.ttf. (0.1p)
+5. El botón de plegar es funcional. (0.2p)
+6. Se ha agregado el boton no funcional de configuración. (0.2p)
+6. Se ha agregado el boton de compartir. (0.2p)
+7. Compartir redirigirá a `https://elearning5.hezkuntza.net/`. (0.5p)
+8. Se ha utilizado `tablero_octogonal.webp` como imagen de los botones. (0.1p)
+9. El código está bien estructurado y funciona sin errores. (0.3p)
 
 
 ---
 
-###  Sustentar el trabajo
+###  Sustentar el trabajo (5p)
 
 El equipo de monetización ha dicho que necesitamos cash flow urgente para mantener la empresa a flote, por eso, ha planteado la creación de distintos paquetes de preguntas que puedan vender. El equipo de diseño ha decidido adelantarse y hacer un prototipo no funcional de "como se vería" esa lista de temas en el juego.
 
@@ -105,20 +106,21 @@ Aquí tienes el diseño de la página a crear y el del punto de menú.
 
 #### Evaluación
 
-1. Se ha creado un nuevo fichero de kotlin para la vista.
-2. Se ha añadido un nuevo punto de menú a la vista
-3. El punto de menú respeta el diseño.
-4. El punto de menú es funcional y dirige a la vista.
-5. El punto de menú usa el logo `logo.webp`.
-6. La lista de elementos son botones no funcionales.
-7. Se ha incluido un botón de volver atrás.
-8. El punto de menú usa el botón `boton.webp`.
-9. La vista de elementos se hace con LazyColum y con identificador.
-10. Se ha usado el tipo de letra `youblockheadopen.ttf`
+1. Se ha creado un nuevo fichero de kotlin para la vista. (0.2p)
+2. Se ha añadido un nuevo punto de menú a la vista (0.5p)
+3. El punto de menú es funcional y dirige a la vista. (0.5p)
+4. El punto de menú usa el logo `logo.webp`. (0.2p)
+5. La lista de elementos son botones no funcionales. (0.5p)
+6. Se ha incluido un botón de volver atrás. (0.7p)
+7. El punto de menú usa el botón `boton.webp`. (0.2p)
+8. La vista de elementos se hace con LazyColum y con identificador. (0.8p)
+9. Se ha usado el tipo de letra `youblockheadopen.ttf`. (0.2p)
+10. La página respeta el estilo del diseño. (0.9p)
+11. El código está bien estructurado y funciona sin errores. (0.3p)
 
 ---
 
-### La racha de la embestida
+### La racha de la embestida (2,5p)
 En el juego hay un slider con un escudo que va subiendo segun se aciertan preguntas. Ahora, además, queremos implementar un contador que indica la racha de preguntas acertadas seguidas.
 
 **Tu tarea es agregar el contador de racha.**
@@ -128,7 +130,8 @@ Aquí tienes el diseño del contador:
 ![alt text](image-4.png)
 
 #### Evaluación
-1. Se ha creado una nueva variable racha en el view vodel.
-2. Se ha implementado correctamente la lógica necesaria para que represente la racha de preguntas acertadas seguidas.
-3. Se ha añadido la racha a la vista de juego, en la función `ProgressArea` en el `Thumb` del slider.
-4. El contador de racha respeta el diseño.
+1. Se ha creado una nueva variable racha en el view vodel. (0.4p)
+2. Se ha implementado correctamente la lógica necesaria para que represente la racha de preguntas acertadas seguidas. (0.8p)
+3. Se ha añadido la racha a la vista de juego, en la función `ProgressArea` en el `Thumb` del slider. (0.8p)
+4. El contador de racha respeta el diseño. (0.2p)
+5. El código está bien estructurado y funciona sin errores. (0.3p)
