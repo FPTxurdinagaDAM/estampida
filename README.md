@@ -1,6 +1,6 @@
 <div style="display: flex; justify-content: space-between;">
-  <img src="image-1.png" alt="alt text" style="width: 20%;">
-  <img src="logoEusko.png" alt="alt text" style="width: 48%;">
+  <img src="Examen-DI/image-1.png" alt="alt text" style="width: 20%;">
+  <img src="Examen-DI/logoEusko.png" alt="alt text" style="width: 48%;">
 </div>
 
 # Examen DI - Eval 1 - 24/10/2024
@@ -64,6 +64,8 @@ El juego es sencillo, las preguntas surgen infinitamente y el jugador va ganando
 ---
 
 # Ejercicios
+
+⚠️⚠️⚠️ Incluye un GIF mostrando cada ejercicio implementado en su sección correspondiente del README de este repositorio ⚠️⚠️⚠️
 
 ### Configura y comparte (2,5p)
 
