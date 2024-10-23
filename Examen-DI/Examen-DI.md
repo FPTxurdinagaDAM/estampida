@@ -10,11 +10,11 @@
       - [Embestida](#embestida)
       - [Estructura del proyecto](#estructura-del-proyecto)
 - [Ejercicios](#ejercicios)
-    - [Configura y comparte](#configura-y-comparte)
+    - [Configura y comparte (2,5p)](#configura-y-comparte-25p)
       - [Evaluación](#evaluación)
-    - [Sustentar el trabajo](#sustentar-el-trabajo)
+    - [Sustentar el trabajo (5p)](#sustentar-el-trabajo-5p)
       - [Evaluación](#evaluación-1)
-    - [La racha de la embestida](#la-racha-de-la-embestida)
+    - [La racha de la embestida (2,5p)](#la-racha-de-la-embestida-25p)
       - [Evaluación](#evaluación-2)
 
 # Descripción del examen
